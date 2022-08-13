@@ -1,5 +1,5 @@
-import { createContext } from 'react'
+import { createContext } from 'react';
 
-export const ViewsContext = createContext({})
+export const ViewsContext = createContext({});
 
-export default ViewsContext
+export default ViewsContext;

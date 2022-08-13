@@ -1,37 +1,37 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import { Button, Card, Form, List, Modal } from '@components'
+import { Button, Card, Form, List, Modal } from '@components';
 
 type User = {
-  name: string
-  age: string
-}
+  name: string;
+  age: string;
+};
 
 export default function App() {
-  const [users, setUsers] = useState<User[]>([])
-  const [name, setName] = useState('')
-  const [age, setAge] = useState('')
-  const [showModal, setShowModal] = useState(false)
+  const [users, setUsers] = useState<User[]>([]);
+  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
+  const [showModal, setShowModal] = useState(false);
 
   function handleChangeName(event: any) {
-    setName(event.target.value)
+    setName(event.target.value);
   }
 
   function handleChangeAge(event: any) {
-    setAge(event.target.value)
+    setAge(event.target.value);
   }
 
   function handleSubmit(event: any) {
-    event.preventDefault()
+    event.preventDefault();
 
     if (!name || !age) {
-      setShowModal(true)
-      return
+      setShowModal(true);
+      return;
     }
 
-    setUsers(users => [...users, { name, age }])
-    setName('')
-    setAge('')
+    setUsers(users => [...users, { name, age }]);
+    setName('');
+    setAge('');
   }
 
   return (
@@ -73,5 +73,5 @@ export default function App() {
         <span>Oh SHit!</span>
       </Modal>
     </>
-  )
+  );
 }

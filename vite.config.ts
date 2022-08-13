@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tsonfigPaths from 'vite-tsconfig-paths'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tsonfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsonfigPaths()]
+  plugins: [react(), tsonfigPaths()],
   // resolve: {
   //   alias: [
   //     { find: '@actions', replacement: '/src/actions' },
@@ -18,4 +18,4 @@ export default defineConfig({
   //     { find: '@utils', replacement: '/src/utils' }
   //   ]
   // }
-})
+});

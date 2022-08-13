@@ -1,11 +1,11 @@
 export default function Card({
   children,
   className,
-  onClick
+  onClick,
 }: {
-  children: JSX.Element | JSX.Element[] | string
-  className?: string
-  onClick?: any
+  children: JSX.Element | JSX.Element[] | string;
+  className?: string;
+  onClick?: any;
 }) {
   return (
     <div
@@ -23,5 +23,5 @@ export default function Card({
     >
       {children}
     </div>
-  )
+  );
 }

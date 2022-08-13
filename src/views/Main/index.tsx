@@ -1,13 +1,13 @@
-import { Card } from '@components'
+import { Card } from '@components';
 
 export default function Main({
-  onClick
+  onClick,
 }: {
-  disabled: boolean
-  onClick: any | undefined
+  disabled: boolean;
+  onClick: any | undefined;
 }) {
   function handleClick(viewName: string) {
-    onClick(viewName)
+    onClick(viewName);
   }
 
   return (
@@ -18,5 +18,5 @@ export default function Main({
         Advanced Food Order App
       </Card>
     </div>
-  )
+  );
 }

@@ -1,3 +1,3 @@
-import useUniqueId from './useUniqueId'
+import useUniqueId from './useUniqueId';
 
-export { useUniqueId }
+export { useUniqueId };

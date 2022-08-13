@@ -1,11 +1,11 @@
-import { createPortal } from 'react-dom'
+import { createPortal } from 'react-dom';
 
 export default function ({
   children,
-  show
+  show,
 }: {
-  children: JSX.Element
-  show: boolean
+  children: JSX.Element;
+  show: boolean;
 }) {
   return show
     ? createPortal(
@@ -21,5 +21,5 @@ export default function ({
         </div>,
         document.querySelector('body') as HTMLElement
       )
-    : null
+    : null;
 }

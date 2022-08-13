@@ -2,12 +2,12 @@ export default function FormInput({
   type,
   placeholder,
   value,
-  onChange
+  onChange,
 }: {
-  type: string
-  placeholder?: string
-  value: string | number | undefined
-  onChange: (event: any) => void
+  type: string;
+  placeholder?: string;
+  value: string | number | undefined;
+  onChange: (event: any) => void;
 }) {
   return (
     <input
@@ -17,5 +17,5 @@ export default function FormInput({
       value={value}
       onChange={onChange}
     />
-  )
+  );
 }

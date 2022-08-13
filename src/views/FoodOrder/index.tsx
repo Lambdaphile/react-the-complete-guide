@@ -1,3 +1,3 @@
 export default function FoodOrder() {
-  return <p>Food Order App</p>
+  return <p>Food Order App</p>;
 }
