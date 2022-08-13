@@ -11,7 +11,7 @@ export const initialViews = {
 export const viewReducer = (state = initialViews, action: any) => {
   switch (action.type) {
     case 'CHANGE_VIEW':
-      return { ...state, current: }
+    // return { ...state, current: }
     default:
       return state
   }

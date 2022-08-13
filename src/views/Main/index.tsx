@@ -1,6 +1,11 @@
 import { Card } from '@components'
 
-export default function Main({ onClick }: { onClick: any }) {
+export default function Main({
+  onClick
+}: {
+  disabled: boolean
+  onClick: any | undefined
+}) {
   function handleClick(viewName: string) {
     onClick(viewName)
   }
